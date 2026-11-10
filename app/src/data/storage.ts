@@ -19,7 +19,7 @@ const localStorageStore: KeyValueStore = {
   },
 };
 
-const preferencesStore: KeyValueStore = {
+export const preferencesStore: KeyValueStore = {
   async get(key) {
     try {
       return (await Preferences.get({ key })).value;

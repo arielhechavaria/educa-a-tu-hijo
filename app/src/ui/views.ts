@@ -1,5 +1,6 @@
 import { NOMBRE_DIMENSION, TEXTO_RESULTADO, resumenSemana } from '../core/semana';
 import type { Resultado } from '../core/types';
+import { abrirIntro } from './intro';
 import { exportarJSON, importarJSON } from '../data/exportImport';
 import { actualizarAjustes } from '../data/progress';
 import { h } from './dom';
@@ -139,7 +140,8 @@ export function ajustes(): HTMLElement {
       h('button', { class: 'btn', onclick: exportar }, 'Exportar'), h('button', { class: 'btn', onclick: copiar }, 'Copiar'),
       h('button', { class: 'btn', onclick: descargar }, 'Descargar'),
       h('button', { class: 'btn', onclick: () => void importar(caja.value) }, 'Importar texto')),
-    h('label', {}, 'Importar desde archivo', archivo), aviso);
+    h('label', {}, 'Importar desde archivo', archivo), aviso,
+    h('h2', {}, 'Introducción'), h('button', { class: 'btn', onclick: () => void abrirIntro() }, 'Ver el video de introducción'));
 }
 
 export const rutas: Record<string, (arg: string) => Vista> = { hoy, ficha, lamina, semana, ajustes };

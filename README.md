@@ -4,6 +4,12 @@ App Android 100 % offline, de uso personal, que guía al padre para trabajar **1
 
 El contenido sale de los cuadernos oficiales de Primera Infancia (Editorial Pueblo y Educación, 2024). La app no inventa actividades: solo redacta la instrucción al padre, la variante sin lámina y la señal de logro.
 
+## Video de introducción
+
+[Ver el video en Google Drive](https://drive.google.com/file/d/1RsDJ63gJ1JB6oF2Yij0DO0eh0NBIcXHY/view?usp=drivesdk)
+
+La app lo muestra al abrirla por primera vez, con un botón **Saltar** siempre visible. Se puede volver a verlo desde Ajustes. El archivo va dentro del APK (`app/public/intro/educa-a-tu-hijo.mp4`, unos 2.6 MB), así que funciona sin red.
+
 ## Principios
 
 - La app es para el padre, no para el niño: dice qué hacer, con qué materiales y en qué página está la lámina.
