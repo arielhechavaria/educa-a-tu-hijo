@@ -6,9 +6,7 @@ El contenido sale de los cuadernos oficiales de Primera Infancia (Editorial Pueb
 
 ## Video de introducción
 
-<video src="https://github.com/arielhechavaria/educa-a-tu-hijo/raw/main/app/public/intro/educa-a-tu-hijo.mp4" controls width="560">
-  Tu navegador no reproduce video. <a href="app/public/intro/educa-a-tu-hijo.mp4">Descargar el video</a>.
-</video>
+▶️ **[Ver el video de introducción](https://github.com/arielhechavaria/educa-a-tu-hijo/blob/main/app/public/intro/educa-a-tu-hijo.mp4)** (se reproduce directamente en GitHub).
 
 La app lo muestra al abrirla por primera vez, con un botón **Saltar** siempre visible. Se puede volver a verlo desde Ajustes. El archivo va dentro del APK (`app/public/intro/educa-a-tu-hijo.mp4`, unos 2.6 MB), así que funciona sin red.
 
