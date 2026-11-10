@@ -25,7 +25,7 @@ Estrategia de entrega: ask-on-risk. Runner de tests: vitest para `app/` (lógica
 - [x] T18 (S5,S6) sonnet — registro + Semana
 - [x] T19 (S7) haiku — Ajustes
 - [x] T20 (S11) sonnet — pase de calidad
-- [ ] T21 (S10) haiku — APK + README (bloqueo probable: sin JDK/Android SDK en el entorno)
+- [x] T21 (S10) haiku (APK 20.4 MB via GitHub Actions, repo público arielhechavaria/diez-minutos por decisión del usuario) — APK + README (bloqueo probable: sin JDK/Android SDK en el entorno)
 - [ ] T22 (S10,S11) opus, independiente — revisión final
 
 ## Log

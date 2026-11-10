@@ -31,7 +31,7 @@ cd android && ./gradlew assembleDebug
 # APK: android/app/build/outputs/apk/debug/app-debug.apk
 ```
 
-Keep the APK under 60 MB.
+Keep the APK under 60 MB. Without a local JDK/SDK, the workflow `.github/workflows/apk.yml` builds it on GitHub Actions (artifact `app-debug-apk`).
 
 ## Notes
 
