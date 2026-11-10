@@ -13,8 +13,8 @@ Estrategia de entrega: ask-on-risk. Runner de tests: por definir en T04 (node:te
 - Alcance: crear/escribir en `sources/`, `content/`, `scripts/`, `.gitattributes`, `.gitignore`, `package.json`. No tocar `app/`. (`odd/tasks/` lo crea el protocolo ODD.)
 
 ## Tasks
-- [x] T01 (S1) inline — repo + LFS
-- [ ] T02 (S2, S7) inline — descarga + MANIFEST
+- [x] T01 (S1) inline — repo + LFS; commit c368b5d
+- [x] T02 (S2, S7) inline — 12 PDFs, bytes y sha256 verificados; commit en feat/contenido-cuadernos (1 reintento tras timeout transitorio)
 - [ ] T03 (S3, S7) sonnet por PDF
 - [ ] T04 (S5, S6) sonnet, TDD
 - [ ] T05 haiku — OCR
