@@ -1,5 +1,6 @@
 import './style.css';
 import { h } from './ui/dom';
+import { introSiCorresponde } from './ui/intro';
 import { iniciar } from './ui/state';
 import { actualizar, barra, setAlDetener } from './ui/temporizador';
 import { rutas, setRerender } from './ui/views';
@@ -25,5 +26,6 @@ async function arrancar(): Promise<void> {
   window.addEventListener('hashchange', () => void pintar());
   actualizar();
   await pintar();
+  await introSiCorresponde();
 }
 void arrancar();
