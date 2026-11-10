@@ -1,0 +1,98 @@
+[
+  {
+    "item": 627,
+    "media": 628,
+    "file": "sources/pdf/patrones-sensoriales.pdf",
+    "url": "https://biblioteca.cubaeduca.cu/files/original/18be7110eeb69cac278b42a06ad32f0d9c91ebc8.pdf",
+    "bytes": 2045320,
+    "sha256": "1badf190248af4a9ce6b44f547b000acc0e7f46f5233de48d7158135c93d62a2"
+  },
+  {
+    "item": 190,
+    "media": 475,
+    "file": "sources/pdf/pre-escritura.pdf",
+    "url": "https://biblioteca.cubaeduca.cu/files/original/2166a87b62b792d8a771ff9132e1ba8bb4924cd6.pdf",
+    "bytes": 1651189,
+    "sha256": "437c7c1a4ca309ed255e6a7ca012d783f32cd6ed98273ee50848050517d3f6ee"
+  },
+  {
+    "item": 619,
+    "media": 620,
+    "file": "sources/pdf/lectura-imagenes-4-5.pdf",
+    "url": "https://biblioteca.cubaeduca.cu/files/original/68dff9ca496c85e5d2f8f53aaeac6d7bd65bbc94.pdf",
+    "bytes": 4040400,
+    "sha256": "f9de475f5302e79f75f465b9f55a9ff81921a75570153a9bc22ab273796318ed"
+  },
+  {
+    "item": 621,
+    "media": 622,
+    "file": "sources/pdf/aprendo-con-mi-entorno.pdf",
+    "url": "https://biblioteca.cubaeduca.cu/files/original/bc31c34b3c1033a90d4f4a10145878abdda86d13.pdf",
+    "bytes": 28625493,
+    "sha256": "ab941dd6c41dc52efce88c53c1f093a2407272fefbd09d0e19bad5dcb4823075"
+  },
+  {
+    "item": 192,
+    "media": 257,
+    "file": "sources/pdf/relaciones-espaciales.pdf",
+    "url": "https://biblioteca.cubaeduca.cu/files/original/b6cd909b38f442d1f225ade6fc8bd3d9c88ec226.pdf",
+    "bytes": 12379030,
+    "sha256": "2fe8d496e008e9063eae2f639fcb0d68cf524ecc658e9781da7d8b72226a81ac"
+  },
+  {
+    "item": 187,
+    "media": 474,
+    "file": "sources/pdf/nociones-matematica.pdf",
+    "url": "https://biblioteca.cubaeduca.cu/files/original/5e94ecd34ee09356c1111eba02def265b4657fd0.pdf",
+    "bytes": 11374644,
+    "sha256": "7ee18439a14557df0f558693c1717da52c05867c6ac98abec38dbffebddda0bf"
+  },
+  {
+    "item": 550,
+    "media": 616,
+    "file": "sources/pdf/juegos-de-tarjetas.pdf",
+    "url": "https://biblioteca.cubaeduca.cu/files/original/f8f372036f611787be56684e2a706fb8f2f95eb2.pdf",
+    "bytes": 64476882,
+    "sha256": "467530cff6f0187e046cfd339572cb1ff161adb9bb6c2b0d447c572c1bfc71b8"
+  },
+  {
+    "item": 552,
+    "media": 615,
+    "file": "sources/pdf/lectura-imagenes-general.pdf",
+    "url": "https://biblioteca.cubaeduca.cu/files/original/9e174e78648b8ffba7e1e22ecda40984d86958e1.pdf",
+    "bytes": 17145410,
+    "sha256": "13266e38e7342797cf99e632bdc42a96b262c3b41fc2c1f8292f01147cb53704"
+  },
+  {
+    "item": 623,
+    "media": 624,
+    "file": "sources/pdf/lectura-imagenes-5-6.pdf",
+    "url": "https://biblioteca.cubaeduca.cu/files/original/77e57007f390362f7bcbc991744acd7118731c34.pdf",
+    "bytes": 12143302,
+    "sha256": "b1ac0aa87261a6f8ce0146371d78282498584827ee02766cc749daab9b49eefe"
+  },
+  {
+    "item": 625,
+    "media": 626,
+    "file": "sources/pdf/analisis-fonico-5-6.pdf",
+    "url": "https://biblioteca.cubaeduca.cu/files/original/09358ffb358c015f851f6138cec6cc645243dc95.pdf",
+    "bytes": 1575734,
+    "sha256": "ef9cc2f797637f033351e90ec48d9fdd6f22b07cfcd9a15252bc61f3228c85f1"
+  },
+  {
+    "item": 629,
+    "media": 630,
+    "file": "sources/pdf/diagnostico-egreso-5-6.pdf",
+    "url": "https://biblioteca.cubaeduca.cu/files/original/eeba35e255393acf57d0f89c71326aa8a888a05e.pdf",
+    "bytes": 809957,
+    "sha256": "0bed8b9c8f9ec05883f12b89425305afe17aafb698beeb0cb5ed885ffec8fdb5"
+  },
+  {
+    "item": 476,
+    "media": 477,
+    "file": "sources/pdf/tareas-diagnosticas-preescolar.pdf",
+    "url": "https://biblioteca.cubaeduca.cu/files/original/125baecfe700bd651480329e59b91946ce7c04e2.pdf",
+    "bytes": 759593,
+    "sha256": "fb041f829837e5f7d1b5385739e9c212446b937b029dbb1187bf58b090459367"
+  }
+]

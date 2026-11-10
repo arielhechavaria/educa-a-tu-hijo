@@ -1,0 +1,50 @@
+name: Build debug APK (Educa a tu Hijo)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+      - name: Fetch only the compressed PDFs
+        run: git lfs pull --include="app/public/pdf/*"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+      - name: Build web app
+        working-directory: app
+        run: |
+          npm ci
+          npm test
+          npm run build
+          npx cap sync android
+      - name: Assemble debug APK
+        working-directory: app/android
+        run: ./gradlew assembleDebug
+      - name: APK size
+        run: ls -l app/android/app/build/outputs/apk/debug/app-debug.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: app-debug-apk
+          path: app/android/app/build/outputs/apk/debug/app-debug.apk
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp app/android/app/build/outputs/apk/debug/app-debug.apk educa-a-tu-hijo.apk
+          gh release delete latest --yes --cleanup-tag || true
+          gh release create latest educa-a-tu-hijo.apk \
+            --title "Educa a tu Hijo (APK debug)" \
+            --notes "APK debug generado desde ${GITHUB_SHA::7}. Instalar permitiendo orígenes desconocidos."

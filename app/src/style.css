@@ -1,0 +1,36 @@
+:root { --bg:#fbf8f3; --fg:#1d1b19; --sub:#5f5a54; --card:#fff; --line:#ddd5c8; --acc:#1f6f5c; --acc-fg:#fff; --sel:#d8efe7; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) { :root { --bg:#14120f; --fg:#f1ece4; --sub:#b3aa9e; --card:#1f1c18; --line:#3a352e; --acc:#59c2a5; --acc-fg:#0b2a22; --sel:#244a3f; } }
+* { box-sizing: border-box; }
+html { font-size: 20px; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: system-ui, sans-serif; line-height: 1.45; -webkit-tap-highlight-color: transparent; }
+#app { min-height: 100dvh; display: flex; flex-direction: column; }
+.contenido { flex: 1; padding: 1rem 1rem 11rem; max-width: 40rem; width: 100%; margin: 0 auto; }
+h1 { font-size: 1.6rem; margin: .3rem 0 .6rem; } h2 { font-size: 1.05rem; margin: 1.1rem 0 .2rem; color: var(--sub); }
+p, li { font-size: 1rem; } .sub { color: var(--sub); }
+.lista { list-style: none; padding: 0; margin: 0; display: grid; gap: .7rem; }
+.tarjeta { display: grid; gap: .15rem; padding: .9rem 1rem; background: var(--card); border: 1px solid var(--line); border-radius: 14px; color: inherit; text-decoration: none; min-height: 4rem; }
+.tarjeta__dim { font-size: .8rem; color: var(--acc); font-weight: 600; text-transform: uppercase; letter-spacing: .03em; }
+.tarjeta__min { font-size: .85rem; color: var(--sub); }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 3.2rem; padding: .5rem 1rem; font: inherit; font-weight: 600; color: var(--fg); background: var(--card); border: 2px solid var(--acc); border-radius: 14px; text-decoration: none; cursor: pointer; }
+.btn--sel { background: var(--sel); } .btn--grande { width: 100%; min-height: 4rem; background: var(--acc); color: var(--acc-fg); font-size: 1.2rem; } .btn--chico { min-height: 2.4rem; padding: .2rem .8rem; }
+.accion { position: fixed; left: 0; right: 0; bottom: 3.8rem; padding: .6rem 1rem; max-width: 40rem; margin: 0 auto; }
+.registro { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; margin: 1rem 0; }
+.contenido > section > .btn { margin-top: 1rem; width: 100%; }
+.atras { display: inline-block; padding: .4rem 0; color: var(--acc); text-decoration: none; font-weight: 600; }
+.tabs { position: fixed; bottom: 0; left: 0; right: 0; display: flex; background: var(--card); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom); }
+.tabs a { flex: 1; text-align: center; padding: 1rem 0; color: var(--sub); text-decoration: none; font-weight: 600; } .tabs a.activa { color: var(--acc); box-shadow: inset 0 3px var(--acc); }
+.timer { position: sticky; top: 0; z-index: 5; display: flex; align-items: center; gap: .8rem; padding: .5rem 1rem; background: var(--acc); color: var(--acc-fg); }
+.timer__tiempo { font-size: 1.8rem; font-weight: 700; font-variant-numeric: tabular-nums; } .timer__texto { flex: 1; font-size: .85rem; }
+.timer .btn { border-color: var(--acc-fg); background: transparent; color: var(--acc-fg); }
+.timer--fin { background: #b4541a; color: #fff; }
+.campo { display: block; width: 100%; font: inherit; padding: .6rem; margin: .3rem 0 1rem; background: var(--card); color: var(--fg); border: 1px solid var(--line); border-radius: 10px; min-height: 3rem; }
+label { display: block; font-weight: 600; }
+.resumen { white-space: pre-wrap; font: inherit; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 1rem; }
+.lamina-caja { overflow: auto; border: 1px solid var(--line); border-radius: 10px; max-height: 70dvh; } .lamina { display: block; }
+.timer[hidden] { display: none; }
+.visor { display: grid; gap: .5rem; } .visor > span { color: var(--sub); }
+.registro--fijo { position: fixed; left: 0; right: 0; bottom: 3.7rem; max-width: 40rem; margin: 0 auto; padding: .6rem 1rem; background: var(--bg); border-top: 1px solid var(--line); }
+.contenido .registro--fijo + * { margin-bottom: 0; }
+.atras { display: block; }
+.timer { gap: .6rem; padding: .4rem .8rem; } .timer__tiempo { font-size: 1.5rem; } .timer__texto { min-width: 0; font-size: .75rem; line-height: 1.2; } .timer .btn { flex-shrink: 0; }
+.registro--fijo { gap: .4rem; padding: .4rem .8rem; } .registro--fijo .btn { min-height: 2.9rem; font-size: .9rem; padding: .2rem .4rem; }

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Educa a tu Hijo</string>
+    <string name="title_activity_main">Educa a tu Hijo</string>
+    <string name="package_name">cu.educaatuhijo.app</string>
+    <string name="custom_url_scheme">cu.educaatuhijo.app</string>
+</resources>
