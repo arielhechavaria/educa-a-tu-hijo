@@ -265,8 +265,37 @@ describe('planificarDia: review intervals', () => {
 
   it('due reviews never take every slot while never-seen fichas remain', () => {
     const fichas = [...serie('r', 6, { duracion_min: 5 }), ...serie('n', 3, { duracion_min: 5 })];
-    const registros = serie('r', 6).map((f) => reg(f.id, addDays(D, -5), 'no'));
+    // Due 3-week reviews ("Lo hizo solo" twice).
+    const registros = serie('r', 6).flatMap((f) => [reg(f.id, addDays(D, -40), 'solo'), reg(f.id, addDays(D, -30), 'solo')]);
     expect(ids({ fichas, registros })).toEqual(['r1', 'r2', 'n1']);
+  });
+
+  it('due "Todavía no" reviews extend the plan past the target, keeping one new ficha', () => {
+    const fichas = [...serie('r', 4, { duracion_min: 5 }), ...serie('n', 3, { duracion_min: 5 })];
+    const registros = serie('r', 4).map((f) => reg(f.id, addDays(D, -3), 'no'));
+    expect(ids({ fichas, registros })).toEqual(['r1', 'r2', 'n1', 'r3', 'r4']);
+  });
+
+  it('the new ficha gives way only when every slot left is needed by a due "Todavía no"', () => {
+    const fichas = [...serie('r', 6, { duracion_min: 5 }), ...serie('n', 3, { duracion_min: 5 })];
+    const registros = serie('r', 6).map((f) => reg(f.id, addDays(D, -5), 'no'));
+    expect(ids({ fichas, registros })).toEqual(['r1', 'r2', 'r3', 'r4', 'r5']);
+  });
+
+  it('a due "Todavía no" goes before reviews that have been due for longer', () => {
+    const fichas = [
+      ficha('s', { cuaderno: 'x', orden: 1, duracion_min: 5 }),
+      ficha('a', { cuaderno: 'x', orden: 2, duracion_min: 5 }),
+      ficha('x', { cuaderno: 'x', orden: 3, duracion_min: 5 }),
+      ...serie('n', 3, { duracion_min: 5 }),
+    ];
+    const registros = [
+      reg('s', addDays(D, -40), 'solo'),
+      reg('s', addDays(D, -30), 'solo'),
+      reg('a', addDays(D, -9), 'ayuda'),
+      reg('x', addDays(D, -3), 'no'),
+    ];
+    expect(ids({ fichas, registros })).toEqual(['x', 'a', 'n1']);
   });
 
   it('ignores registros dated after the planned fecha', () => {
@@ -321,6 +350,24 @@ describe('planificarDia: rotating the main dimension', () => {
   it('still plans when only one dimension exists', () => {
     const ayer: PlanDia = { fecha: addDays(D, -1), fichaIds: [], dimensionPrincipal: 'relacion_entorno' };
     expect(ids({ fichas: serie('a', 4), planes: [ayer] })).toEqual(['a1', 'a2', 'a3']);
+  });
+
+  it('rotates with a later never-seen ficha of another dimension when the available ones share it', () => {
+    // One cuaderno, mostly relacion_entorno (like sexto): only a1 is a head.
+    const mixed = [...serie('a', 4, { dimension: 'relacion_entorno' }), ficha('a5', { cuaderno: 'cuaderno-a', orden: 5, dimension: 'comunicacion' })];
+    const ayer: PlanDia = { fecha: addDays(D, -1), fichaIds: [], dimensionPrincipal: 'relacion_entorno' };
+    expect(ids({ fichas: mixed, planes: [ayer] })).toEqual(['a5', 'a1', 'a2']);
+  });
+
+  it('rotates with the seen ficha of another dimension closest to its review when nothing else differs', () => {
+    const fichas = [
+      ...serie('a', 4, { dimension: 'relacion_entorno' }),
+      ficha('c1', { cuaderno: 'c', dimension: 'comunicacion' }),
+      ficha('c2', { cuaderno: 'c', orden: 2, dimension: 'comunicacion' }),
+    ];
+    const registros = [reg('c1', addDays(D, -2), 'solo'), reg('c2', addDays(D, -4), 'solo')];
+    const ayer: PlanDia = { fecha: addDays(D, -1), fichaIds: [], dimensionPrincipal: 'relacion_entorno' };
+    expect(ids({ fichas, registros, planes: [ayer] })).toEqual(['c2', 'a1', 'a2']);
   });
 
   it('alternates over consecutive days even with dimensions missing from the content', () => {
@@ -403,6 +450,51 @@ describe('planificarDia with the real content (quinto)', () => {
   });
 });
 
+describe('planificarDia with the real content: 90 days of mixed results', () => {
+  const modules = import.meta.glob<Ficha[]>('../../../content/actividades/*.json', { eager: true, import: 'default' });
+  const all = Object.values(modules).flat();
+  const DAYS = 90;
+  const SEEDS = [1, 7, 42];
+  const years: AnioVida[] = ['quinto', 'sexto'];
+
+  for (const anioVida of years) {
+    for (const seed of SEEDS) {
+      const run = simulateMixed(all, anioVida, DAYS, seed);
+
+      it(`${anioVida}, seed ${seed}: "Todavía no" comes back within 3 days (>=90%), never later than 4`, () => {
+        const gaps = returnGaps(run, 'no', 4);
+        expect(gaps.length).toBeGreaterThan(10);
+        const summary = describeGaps(gaps);
+        expect(gaps.filter((g) => g <= 3).length / gaps.length, summary).toBeGreaterThanOrEqual(0.9);
+        expect(Math.max(...gaps), summary).toBeLessThanOrEqual(4);
+      });
+
+      it(`${anioVida}, seed ${seed}: "Con ayuda" comes back within 7 days (>=90%), never later than 9`, () => {
+        const gaps = returnGaps(run, 'ayuda', 9);
+        expect(gaps.length).toBeGreaterThan(10);
+        const summary = describeGaps(gaps);
+        expect(gaps.filter((g) => g <= 7).length / gaps.length, summary).toBeGreaterThanOrEqual(0.9);
+        expect(Math.max(...gaps), summary).toBeLessThanOrEqual(9);
+      });
+
+      it(`${anioVida}, seed ${seed}: never repeats the main dimension on consecutive days`, () => {
+        const repeats = run.planes.filter((p, i) => i > 0 && p.dimensionPrincipal === run.planes[i - 1].dimensionPrincipal);
+        expect(repeats.map((p) => p.fecha)).toEqual([]);
+      });
+
+      it(`${anioVida}, seed ${seed}: keeps 3–5 distinct fichas of the active year per plan`, () => {
+        const byId = new Map(all.map((f) => [f.id, f]));
+        for (const p of run.planes) {
+          expect(p.fichaIds.length).toBeGreaterThanOrEqual(MIN_FICHAS);
+          expect(p.fichaIds.length).toBeLessThanOrEqual(MAX_FICHAS);
+          expect(new Set(p.fichaIds).size).toBe(p.fichaIds.length);
+          expect(p.fichaIds.every((id) => byId.get(id)?.anio_vida === anioVida)).toBe(true);
+        }
+      });
+    }
+  }
+});
+
 /**
  * Plans `days` consecutive days starting at D, persisting each plan and recording a result for every ficha.
  * 'mixed' cycles through solo/ayuda/no/saltar deterministically.
@@ -420,4 +512,75 @@ function simulate(fichas: Ficha[], days: number, mode: 'solo' | 'mixed'): PlanDi
     for (const id of p.fichaIds) registros.push(reg(id, fecha, mode === 'solo' ? 'solo' : cycle[k++ % cycle.length]));
   }
   return planes;
+}
+
+interface MixedRun {
+  planes: PlanDia[];
+  registros: Registro[];
+}
+
+/** Deterministic pseudo-random numbers in [0, 1): a 32-bit LCG (Numerical Recipes constants). */
+function lcg(seed: number): () => number {
+  let state = seed >>> 0;
+  return () => {
+    state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
+    return state / 2 ** 32;
+  };
+}
+
+/** Result mix of the long simulations: 40% solo, 30% ayuda, 20% no, 10% saltar. */
+const MIX: readonly (readonly [Resultado, number])[] = [
+  ['solo', 0.4],
+  ['ayuda', 0.3],
+  ['no', 0.2],
+  ['saltar', 0.1],
+];
+
+/** Plans `days` consecutive days of `anioVida` from D, recording a seeded pseudo-random result for every ficha. */
+function simulateMixed(fichas: Ficha[], anioVida: AnioVida, days: number, seed: number): MixedRun {
+  const next = lcg(seed);
+  const pick = (): Resultado => {
+    let r = next();
+    for (const [resultado, weight] of MIX) {
+      if (r < weight) return resultado;
+      r -= weight;
+    }
+    return 'solo';
+  };
+  const ajustes: Ajustes = { anioVida, duracionMin: 10 };
+  const planes: PlanDia[] = [];
+  const registros: Registro[] = [];
+  for (let i = 0; i < days; i++) {
+    const fecha = addDays(D, i);
+    const p = planificarDia({ fecha, fichas, registros, planes, ajustes });
+    if (!p) throw new Error('no plan');
+    planes.push(p);
+    for (const id of p.fichaIds) registros.push(reg(id, fecha, pick()));
+  }
+  return { planes, registros };
+}
+
+/**
+ * Days until each ficha that got `resultado` is planned again (Infinity when it never is).
+ * Only registros at least `horizon` days before the last simulated day are measured, so every
+ * late return is visible.
+ */
+function returnGaps(run: MixedRun, resultado: Resultado, horizon: number): number[] {
+  const dayOf = new Map(run.planes.map((p, i) => [p.fecha, i]));
+  const lastDay = run.planes.length - 1;
+  const gaps: number[] = [];
+  for (const r of run.registros) {
+    if (r.resultado !== resultado) continue;
+    const day = dayOf.get(r.fecha)!;
+    if (day + horizon > lastDay) continue;
+    const back = run.planes.findIndex((p, i) => i > day && p.fichaIds.includes(r.fichaId));
+    gaps.push(back === -1 ? Infinity : back - day);
+  }
+  return gaps;
+}
+
+function describeGaps(gaps: number[]): string {
+  const histogram: Record<string, number> = {};
+  for (const g of gaps) histogram[String(g)] = (histogram[String(g)] ?? 0) + 1;
+  return `n=${gaps.length} histogram(days->count)=${JSON.stringify(histogram)}`;
 }
