@@ -18,8 +18,8 @@ Estrategia de entrega: ask-on-risk. Runner de tests: vitest para `app/` (lógica
 ## Tasks
 - [x] T12 (S11) inline (scaffold trivial; cap sync android OK) — scaffold Vite+TS+Capacitor
 - [ ] T13 (S4,S10) sonnet — pipeline de assets PDF
-- [ ] T14 (S3,S8) opus — scheduler TDD
-- [ ] T15 (S7,S10) sonnet — capa de datos
+- [x] T14 (S3,S8) opus (89 tests total; decisiones: ver Log L3) — scheduler TDD
+- [x] T15 (S7,S10) sonnet (27 tests; commit data layer) — capa de datos
 - [ ] T16 (S3) sonnet — Hoy + temporizador
 - [ ] T17 (S4) sonnet — Ficha + visor pdf.js
 - [ ] T18 (S5,S6) sonnet — registro + Semana
@@ -31,3 +31,4 @@ Estrategia de entrega: ask-on-risk. Runner de tests: vitest para `app/` (lógica
 ## Log
 - L1 (2026-11-10): request verbatim = el mensaje de autorización "app-10-minutos" (ver Specs, citas literales).
 - L2: Observado: content/ tiene 99 fichas (quinto: relacion_entorno 41, comunicacion 17, motricidad 10, social_personal 6; sexto: 25); NO hay fichas `estetica` → el scheduler debe tolerar dimensiones vacías. Entorno sin java ni Android SDK; disco libre 3.7 GB.
+- L3: T14 decisiones no especificadas (confirmar con el usuario): solo×1 repasa a ~10 días; saltar vuelve al día 1–3 y va último; orden por cuaderno (no solo por subárea, casi todas las subáreas tienen 1 ficha); al menos 1 ficha nueva por día mientras queden (sin esto solo 39/74 fichas aparecían en 60 días). Plan mínimo de 3 fichas puede pasar de 10 min (3×5=15).
