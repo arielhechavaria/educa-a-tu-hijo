@@ -1,0 +1,432 @@
+[
+  {
+    "id": "relaciones-espaciales-p004-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 4,
+    "pagina_impresa": "1",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: ubicación en cuadrícula",
+    "orden": 1,
+    "titulo": "Dónde están el perrito y el gatico",
+    "objetivo": "Ubicar un animal en la cuadrícula cruzando su fila y su columna y marcar el lugar",
+    "materiales": [
+      "lámina del cuaderno",
+      "lápiz"
+    ],
+    "soporte": "papel",
+    "duracion_min": 4,
+    "instruccion_padre": "Mira la lámina con él: arriba hay una fila de animales y a la izquierda una columna. Pídele que haga una marca en el lugar donde están el perrito y el gatico (donde se cruzan su fila y su columna). Si le cuesta, que pase un dedo por la fila y otro por la columna hasta que se encuentren. Pide después otros animales.",
+    "variante_sin_lamina": "Dibuja en una hoja una cuadrícula sencilla de 3 por 3 con un dibujo al lado de cada fila y de cada columna, y pídele que marque dónde se cruzan dos de ellos.",
+    "senal_logro": "Marca por sí solo el punto donde se cruzan la fila y la columna del animal pedido.",
+    "metas_relacionadas": [
+      "egreso-relacion-entorno-02"
+    ],
+    "texto_fuente": "Haz una marca en el lugar en que se encuentran el perrito y el gatico. Aprovechar al máximo las posibilidades que brinda este ejercicio.",
+    "confianza": "media"
+  },
+  {
+    "id": "relaciones-espaciales-p006-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 6,
+    "pagina_impresa": "3",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: izquierda y derecha",
+    "orden": 2,
+    "titulo": "El gatico a la izquierda sobre la cerca",
+    "objetivo": "Distinguir la posición izquierda y señalar el gatico que está a la izquierda sobre la cerca",
+    "materiales": [
+      "lámina del cuaderno"
+    ],
+    "soporte": "papel",
+    "duracion_min": 3,
+    "instruccion_padre": "Muéstrale las cuatro escenas del gatico y la cerca. Pídele que señale el gatico que está a la izquierda sobre la cerca. Antes, que se toque su propia mano izquierda. Pregúntale por qué lo eligió.",
+    "variante_sin_lamina": "Usa una caja o silla como cerca y un muñeco como gatico: ponlo sobre la caja, a la izquierda y a la derecha, y pídele que te diga o te muestre dónde está.",
+    "senal_logro": "Señala el gatico correcto y puede decir por qué.",
+    "metas_relacionadas": [],
+    "texto_fuente": "Señala el gatico que está a la izquierda sobre la cerca.",
+    "confianza": "media"
+  },
+  {
+    "id": "relaciones-espaciales-p008-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 8,
+    "pagina_impresa": "5",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: izquierda y derecha",
+    "orden": 3,
+    "titulo": "La pelota a la derecha del avión",
+    "objetivo": "Ubicar la pelota que está a la derecha del avión en cada fila de objetos",
+    "materiales": [
+      "lámina del cuaderno"
+    ],
+    "soporte": "papel",
+    "duracion_min": 3,
+    "instruccion_padre": "Muéstrale las tres filas de objetos (avión, libro, reloj, pelota). Pídele que señale en cada fila la pelota que está a la derecha del avión. Si duda, que ponga un dedo en el avión y se mueva hacia su mano derecha.",
+    "variante_sin_lamina": "Pon en fila sobre la mesa cuatro objetos de la casa (una pelota, un libro, un juguete y una cuchara) y pídele que señale el que está a la derecha de otro que tú nombras.",
+    "senal_logro": "Señala correctamente la pelota a la derecha del avión sin que se la guíes con la mano.",
+    "metas_relacionadas": [],
+    "texto_fuente": "Señala la pelota que está a la derecha del avión.",
+    "confianza": "media"
+  },
+  {
+    "id": "relaciones-espaciales-p010-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 10,
+    "pagina_impresa": "7",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: entre",
+    "orden": 4,
+    "titulo": "La media entre el delantal y la saya",
+    "objetivo": "Reconocer la posición «entre» y colorear la media que está entre el delantal y la saya",
+    "materiales": [
+      "lámina del cuaderno",
+      "lápiz de color"
+    ],
+    "soporte": "papel",
+    "duracion_min": 4,
+    "instruccion_padre": "Muéstrale las cuatro cuerdas de ropa. Pídele que coloree la media que está entre el delantal y la saya, y recuérdale que coloree dentro de la línea. Si hace falta, ayúdalo a decir qué hay a cada lado de la media.",
+    "variante_sin_lamina": "Cuelga o pon en fila tres prendas de la casa (por ejemplo una media entre una camisa y un short) y pregúntale qué prenda está entre las otras dos.",
+    "senal_logro": "Elige la media correcta y la colorea con cuidado, sin salirse mucho del contorno.",
+    "metas_relacionadas": [
+      "preescolar-motricidad-05"
+    ],
+    "texto_fuente": "Colorea la media que está entre el delantal y la saya.",
+    "confianza": "media"
+  },
+  {
+    "id": "relaciones-espaciales-p012-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 12,
+    "pagina_impresa": "9",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: debajo y derecha",
+    "orden": 5,
+    "titulo": "El animalito debajo, a la derecha de la mesa",
+    "objetivo": "Combinar las posiciones «debajo» y «a la derecha» para encontrar el animalito indicado",
+    "materiales": [
+      "lámina del cuaderno"
+    ],
+    "soporte": "papel",
+    "duracion_min": 3,
+    "instruccion_padre": "Muéstrale la escena de la mesa con el perrito y el gatico. Pídele que señale el animalito que está debajo, a la derecha de la mesa. Puedes usar otras órdenes, como el que está a la izquierda de la mesa.",
+    "variante_sin_lamina": "Usa una mesa de la casa y dos muñecos o juguetes: ponlos debajo, a un lado y al otro, y dale las órdenes para que los señale.",
+    "senal_logro": "Señala el animalito correcto y entiende otras órdenes de posición que le des.",
+    "metas_relacionadas": [],
+    "texto_fuente": "Señala el animalito que está debajo, a la derecha de la mesa. Podrán utilizarse otras órdenes.",
+    "confianza": "media"
+  },
+  {
+    "id": "relaciones-espaciales-p014-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 14,
+    "pagina_impresa": "11",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: direcciones",
+    "orden": 6,
+    "titulo": "Los aviones que van hacia arriba",
+    "objetivo": "Identificar la dirección hacia arriba de los aviones y marcarlos con una ficha de color",
+    "materiales": [
+      "lámina del cuaderno",
+      "fichas de colores"
+    ],
+    "soporte": "papel",
+    "duracion_min": 4,
+    "instruccion_padre": "Muéstrale la lámina de aviones que van en distintas direcciones. Pídele que ponga una ficha del mismo color sobre todos los aviones que van hacia arriba. Con otros colores, que señale los que van hacia otras direcciones.",
+    "variante_sin_lamina": "Haz en una hoja flechas hacia arriba, abajo, izquierda y derecha, o usa un juguete que mueves en cada dirección, y pídele que diga o muestre hacia dónde va.",
+    "senal_logro": "Marca todos los aviones que van hacia arriba sin dejarse ninguno.",
+    "metas_relacionadas": [],
+    "texto_fuente": "Selecciona los aviones que van hacia arriba y colócales una ficha de un color. Con otros colores se señalarán los que van en otras direcciones.",
+    "confianza": "media"
+  },
+  {
+    "id": "relaciones-espaciales-p016-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 16,
+    "pagina_impresa": "13",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: direcciones",
+    "orden": 7,
+    "titulo": "Las flechas hacia la izquierda",
+    "objetivo": "Reconocer las flechas que van hacia la izquierda y marcarlas con fichas del mismo color",
+    "materiales": [
+      "lámina del cuaderno",
+      "fichas de colores"
+    ],
+    "soporte": "papel",
+    "duracion_min": 4,
+    "instruccion_padre": "Muéstrale la lámina de las flechas. Pídele que ponga fichas del mismo color sobre todas las flechas que van hacia la izquierda. Repite con otra dirección (derecha, arriba, abajo).",
+    "variante_sin_lamina": "Dibuja varias flechas en una hoja, o hazlas con palitos, y pídele que señale las que van hacia un lado que tú digas.",
+    "senal_logro": "Marca todas las flechas hacia la izquierda y puede repetirlo con otra dirección.",
+    "metas_relacionadas": [],
+    "texto_fuente": "Señala con fichas del mismo color todas las flechas que van hacia la izquierda. Repetir la actividad con las otras posiciones.",
+    "confianza": "media"
+  },
+  {
+    "id": "relaciones-espaciales-p018-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 18,
+    "pagina_impresa": "15",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: recorridos con modelo",
+    "orden": 8,
+    "titulo": "Ayuda a la niña a llegar al pozo",
+    "objetivo": "Seguir un recorrido guiándose por un modelo para llegar al pozo",
+    "materiales": [
+      "lámina del cuaderno",
+      "lápiz"
+    ],
+    "soporte": "papel",
+    "duracion_min": 5,
+    "instruccion_padre": "Muéstrale la lámina y cuéntale que la niña necesita llegar al pozo a buscar agua. Pídele que se guíe por el modelo de la izquierda y siga el camino con el dedo o con el lápiz.",
+    "variante_sin_lamina": "Marca en el piso un recorrido de la sala a otro lugar de la casa con tres o cuatro paradas, y que lo siga caminando, en el orden que tú le dices.",
+    "senal_logro": "Sigue el camino del modelo y llega al pozo sin perder el orden.",
+    "metas_relacionadas": [
+      "egreso-relacion-entorno-04"
+    ],
+    "texto_fuente": "Ayuda a la niña a llegar al pozo en busca de agua. Guíate por el modelo.",
+    "confianza": "baja"
+  },
+  {
+    "id": "relaciones-espaciales-p020-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 20,
+    "pagina_impresa": "17",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: recorridos con modelo",
+    "orden": 9,
+    "titulo": "Ayuda a Luisito a encontrar el camino de su casa",
+    "objetivo": "Encontrar el camino a casa guiándose por un modelo",
+    "materiales": [
+      "lámina del cuaderno",
+      "lápiz"
+    ],
+    "soporte": "papel",
+    "duracion_min": 5,
+    "instruccion_padre": "Muéstrale la lámina y cuéntale que Luisito quiere llegar a su casa. Pídele que se guíe por el modelo y trace o siga con el dedo el camino. Anímalo a decir hacia dónde va en cada tramo.",
+    "variante_sin_lamina": "Haz un camino en el piso con cinta o cuerdas y pídele que lo recorra de un punto al otro siguiendo las órdenes: derecho, giro a la derecha, giro a la izquierda.",
+    "senal_logro": "Encuentra el camino sin salirse, siguiendo el modelo.",
+    "metas_relacionadas": [
+      "egreso-relacion-entorno-04"
+    ],
+    "texto_fuente": "Ayuda a Luisito a encontrar el camino de su casa. Guíate por el modelo.",
+    "confianza": "baja"
+  },
+  {
+    "id": "relaciones-espaciales-p022-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 22,
+    "pagina_impresa": "19",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: recorridos con modelo",
+    "orden": 10,
+    "titulo": "Lleva a mamá pajarita hasta el nido",
+    "objetivo": "Guiar a la pajarita hasta el nido siguiendo el modelo del camino",
+    "materiales": [
+      "lámina del cuaderno",
+      "lápiz"
+    ],
+    "soporte": "papel",
+    "duracion_min": 5,
+    "instruccion_padre": "Muéstrale la lámina: mamá pajarita debe llegar al nido a darles de comer a sus hijitos. Pídele que se guíe por el modelo (el cuadro amarillo con el camino) y siga el recorrido con el dedo o el lápiz.",
+    "variante_sin_lamina": "Dibuja en una hoja un camino de líneas que gira y pídele que lo siga con el dedo, o hazlo en el piso con cinta para que lo recorra caminando.",
+    "senal_logro": "Sigue el recorrido del modelo y llega al nido sin salirse del camino.",
+    "metas_relacionadas": [
+      "egreso-relacion-entorno-04"
+    ],
+    "texto_fuente": "Lleva a mamá pajarita hasta el nido para dar de comer a sus hijitos. Guíate por el modelo.",
+    "confianza": "baja"
+  },
+  {
+    "id": "relaciones-espaciales-p024-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 24,
+    "pagina_impresa": "21",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: direcciones con flechas",
+    "orden": 11,
+    "titulo": "Lleva la máquina hasta el garaje",
+    "objetivo": "Llevar el carro hasta el garaje guiándose por la dirección de las flechas",
+    "materiales": [
+      "lámina del cuaderno",
+      "lápiz"
+    ],
+    "soporte": "papel",
+    "duracion_min": 5,
+    "instruccion_padre": "Muéstrale la lámina: el carro (la máquina) debe llegar al garaje. Explícale que las flechas del cuadro amarillo dicen hacia dónde ir. Que siga las flechas en orden y trace el camino con el lápiz.",
+    "variante_sin_lamina": "Usa un carrito de juguete y una caja como garaje: dale las órdenes arriba, abajo, izquierda y derecha para que lo lleve, o dibuja las flechas en tarjetas.",
+    "senal_logro": "Lleva el carro al garaje siguiendo cada flecha en el orden correcto.",
+    "metas_relacionadas": [],
+    "texto_fuente": "Lleva la máquina hasta el garaje. Guíate por la dirección de las flechas.",
+    "confianza": "media"
+  },
+  {
+    "id": "relaciones-espaciales-p026-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 26,
+    "pagina_impresa": "23",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: copiar un modelo",
+    "orden": 12,
+    "titulo": "Colorea las pelotas de abajo",
+    "objetivo": "Colorear las pelotas según la posición que muestra el modelo",
+    "materiales": [
+      "lámina del cuaderno",
+      "lápices de colores"
+    ],
+    "soporte": "papel",
+    "duracion_min": 4,
+    "instruccion_padre": "Muéstrale el modelo y pídele que coloree las pelotas de abajo igual que el modelo, fijándose en qué pelotas están coloreadas y en qué color. Que mire primero y después coloree.",
+    "variante_sin_lamina": "Haz en una hoja un modelo de tres o cuatro círculos pintados de colores distintos y pídele que copie los mismos colores en una fila igual.",
+    "senal_logro": "Colorea las pelotas igual que el modelo, respetando la posición de los colores.",
+    "metas_relacionadas": [
+      "preescolar-motricidad-05"
+    ],
+    "texto_fuente": "Colorea las pelotas de abajo. Guíate por el modelo.",
+    "confianza": "media"
+  },
+  {
+    "id": "relaciones-espaciales-p028-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 28,
+    "pagina_impresa": "25",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: copiar un modelo",
+    "orden": 13,
+    "titulo": "Colorea las ventanas del edificio",
+    "objetivo": "Colorear las ventanas del edificio según el modelo, respetando su posición",
+    "materiales": [
+      "lámina del cuaderno",
+      "lápices de colores"
+    ],
+    "soporte": "papel",
+    "duracion_min": 5,
+    "instruccion_padre": "Muéstrale el modelo y el edificio. Pídele que coloree las ventanas del edificio en la misma posición que aparecen en el modelo. Pregúntale dónde está cada ventana, arriba, abajo, a la derecha o a la izquierda.",
+    "variante_sin_lamina": "Dibuja un edificio sencillo con cuadros como ventanas y marca algunas con color como modelo; que pinte otro igual en una segunda hoja.",
+    "senal_logro": "Colorea las ventanas correctas copiando el modelo y casi sin salirse de los cuadros.",
+    "metas_relacionadas": [
+      "preescolar-motricidad-05"
+    ],
+    "texto_fuente": "Colorea las ventanas del edificio. Guíate por el modelo.",
+    "confianza": "media"
+  },
+  {
+    "id": "relaciones-espaciales-p030-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 30,
+    "pagina_impresa": "27",
+    "anio_vida": "sexto",
+    "dimension": "motricidad",
+    "subarea": "motricidad fina: trazo guiado por puntos",
+    "orden": 14,
+    "titulo": "El caminito por los puntos (1)",
+    "objetivo": "Trazar con lápiz un caminito uniendo los puntos igual que el modelo",
+    "materiales": [
+      "lámina del cuaderno",
+      "lápiz"
+    ],
+    "soporte": "papel",
+    "duracion_min": 5,
+    "instruccion_padre": "Muéstrale la cuadrícula de puntos: arriba está el modelo y abajo la cuadrícula vacía. Pídele que haga el caminito uniendo los puntos con el lápiz, igual que el modelo. Esto se hace en el papel, nunca con el dedo en la pantalla.",
+    "variante_sin_lamina": "Haz con un lápiz una cuadrícula de 4 por 4 puntos en una hoja, dibuja un caminito de modelo y pídele que haga otro igual en una cuadrícula vacía.",
+    "senal_logro": "Une los puntos con trazos seguros y su caminito se parece al modelo.",
+    "metas_relacionadas": [
+      "preescolar-relacion-entorno-04",
+      "egreso-relacion-entorno-02"
+    ],
+    "texto_fuente": "Haz el caminito guiándote por los puntos.",
+    "confianza": "media"
+  },
+  {
+    "id": "relaciones-espaciales-p032-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 32,
+    "pagina_impresa": "29",
+    "anio_vida": "sexto",
+    "dimension": "motricidad",
+    "subarea": "motricidad fina: trazo guiado por puntos",
+    "orden": 15,
+    "titulo": "El caminito por los puntos (2)",
+    "objetivo": "Trazar con lápiz un caminito uniendo los puntos igual que el modelo",
+    "materiales": [
+      "lámina del cuaderno",
+      "lápiz"
+    ],
+    "soporte": "papel",
+    "duracion_min": 5,
+    "instruccion_padre": "Muéstrale el modelo y la cuadrícula de puntos vacía. Pídele que haga el caminito uniendo los puntos con el lápiz igual que el modelo, fijándose en hacia dónde va cada línea. Se hace sobre el papel.",
+    "variante_sin_lamina": "Haz con un lápiz una cuadrícula de 4 por 4 puntos en una hoja, dibuja un caminito de modelo y pídele que haga otro igual en una cuadrícula vacía.",
+    "senal_logro": "Une los puntos en el orden y la dirección del modelo, con trazos seguros.",
+    "metas_relacionadas": [
+      "preescolar-relacion-entorno-04",
+      "egreso-relacion-entorno-02"
+    ],
+    "texto_fuente": "Haz el caminito guiándote por los puntos.",
+    "confianza": "media"
+  },
+  {
+    "id": "relaciones-espaciales-p034-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 34,
+    "pagina_impresa": "31",
+    "anio_vida": "sexto",
+    "dimension": "motricidad",
+    "subarea": "motricidad fina: trazo guiado por puntos",
+    "orden": 16,
+    "titulo": "El caminito por los puntos (3)",
+    "objetivo": "Trazar con lápiz un caminito de más giros uniendo los puntos igual que el modelo",
+    "materiales": [
+      "lámina del cuaderno",
+      "lápiz"
+    ],
+    "soporte": "papel",
+    "duracion_min": 5,
+    "instruccion_padre": "Muéstrale el modelo del caminito y las cuadrículas de puntos vacías. Pídele que haga el caminito uniendo los puntos con el lápiz, igual que el modelo. Puede ir más despacio, con más giros. Se hace sobre el papel.",
+    "variante_sin_lamina": "Haz con un lápiz una cuadrícula de 4 por 4 puntos en una hoja, dibuja un caminito con varios giros y pídele que haga otro igual.",
+    "senal_logro": "Reproduce los giros del caminito sin saltarse puntos.",
+    "metas_relacionadas": [
+      "preescolar-relacion-entorno-04",
+      "egreso-relacion-entorno-02"
+    ],
+    "texto_fuente": "Haz el caminito guiándote por los puntos.",
+    "confianza": "media"
+  },
+  {
+    "id": "relaciones-espaciales-p036-a",
+    "cuaderno": "relaciones-espaciales",
+    "pagina_pdf": 36,
+    "pagina_impresa": "33",
+    "anio_vida": "sexto",
+    "dimension": "relacion_entorno",
+    "subarea": "relaciones espaciales: comparar caminos",
+    "orden": 17,
+    "titulo": "¿Cuál caminito es igual al modelo?",
+    "objetivo": "Comparar caminitos con el modelo, señalar el igual y explicar en qué se diferencia el otro",
+    "materiales": [
+      "lámina del cuaderno"
+    ],
+    "soporte": "papel",
+    "duracion_min": 4,
+    "instruccion_padre": "Muéstrale el modelo y los dos caminitos. Pídele que señale cuál es igual al modelo. Después pregúntale por qué es igual o en qué se diferencia el otro. Dale tiempo para explicarlo con sus palabras.",
+    "variante_sin_lamina": "Dibuja con lápiz tres caminitos de puntos, dos iguales y uno distinto, y que busque el que no se parece al modelo.",
+    "senal_logro": "Señala el caminito igual al modelo y dice con sus palabras por qué o en qué difiere el otro.",
+    "metas_relacionadas": [
+      "egreso-relacion-entorno-04",
+      "preescolar-relacion-entorno-02"
+    ],
+    "texto_fuente": "¿Cuáles de los caminitos es igual al modelo? Aprovechar al máximo las posibilidades que brinda el ejercicio, después de señalarlo se estimulará al niño a que explique por qué es igual o en qué se diferencia el otro.",
+    "confianza": "baja"
+  }
+]

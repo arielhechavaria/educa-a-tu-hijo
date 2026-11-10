@@ -43,8 +43,8 @@ Meta (`content/metas.json`): `{ "id": "egreso-relacion-entorno-01", "cuaderno": 
 - [x] T04 (S5, S6) sonnet, TDD — RED (módulo ausente) → GREEN 49/49; ver commit feat(validate)
 - [x] T05 — no aplica: ningún PDF necesita OCR para instrucciones (L3)
 - [x] T06 — no aplica (L3); láminas se leen visualmente
-- [ ] T07 sonnet — orientaciones: hechas para los 4 del quinto año; faltan sexto año (nociones-matematica no tiene; lectura-imagenes-5-6 pdf 4; analisis-fonico-5-6 pdf 4)
-- [ ] T08.a–l (S4, S5, S6) sonnet por cuaderno — HECHOS (quinto): patrones-sensoriales 25, pre-escritura 10, lectura-imagenes-4-5 15, aprendo-con-mi-entorno 49 (24 quinto + 25 sexto). PENDIENTES (sexto): nociones-matematica, relaciones-espaciales, lectura-imagenes-5-6, analisis-fonico-5-6. Sin fichas por decisión: lectura-imagenes-general (3–4 años), juegos-de-tarjetas (láminas)
+- [x] T07 sonnet — orientaciones de los 8 cuadernos con fichas (2026-11-10, rama feat/contenido-sexto)
+- [x] T08.a–l (S4, S5, S6) sonnet por cuaderno — 4 de sexto hechos 2026-11-10 (nociones-matematica 29, relaciones-espaciales 17, lectura-imagenes-5-6 15, analisis-fonico-5-6 18; validate 8 archivos OK, 49 tests). HECHOS (quinto): patrones-sensoriales 25, pre-escritura 10, lectura-imagenes-4-5 15, aprendo-con-mi-entorno 49 (24 quinto + 25 sexto). PENDIENTES (sexto): nociones-matematica, relaciones-espaciales, lectura-imagenes-5-6, analisis-fonico-5-6. Sin fichas por decisión: lectura-imagenes-general (3–4 años), juegos-de-tarjetas (láminas)
 - [x] T09 opus — 23 metas (9 egreso, 14 preescolar), 9 inciertas listadas en reporte
 - [ ] T10 opus — revisión cruzada (distinto al extractor)
 - [ ] T11 haiku — REVISAR.md por script
