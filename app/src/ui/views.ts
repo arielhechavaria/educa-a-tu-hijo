@@ -106,7 +106,10 @@ export function ajustes(): HTMLElement {
   const a = app.progreso.ajustes;
   const aviso = h('p', { class: 'sub', 'aria-live': 'polite' });
   const cambiar = async (parcial: Partial<typeof a>) => {
-    try { await persistir(actualizarAjustes(app.progreso, parcial)); await descartarPlanDeHoy(); aviso.textContent = 'Guardado. El plan de hoy se rehace.'; }
+    try { const cambioAnio = parcial.anioVida !== undefined && parcial.anioVida !== app.progreso.ajustes.anioVida;
+      await persistir(actualizarAjustes(app.progreso, parcial));
+      if (cambioAnio) await descartarPlanDeHoy();
+      aviso.textContent = cambioAnio ? 'Guardado. El plan de hoy se rehace.' : 'Guardado.'; }
     catch (e) { aviso.textContent = (e as Error).message; }
   };
   const año = h('select', { class: 'campo', onchange: (e) => void cambiar({ anioVida: (e.target as HTMLSelectElement).value as 'quinto' | 'sexto' }) },
@@ -119,11 +122,12 @@ export function ajustes(): HTMLElement {
   const copiar = async () => { try { await navigator.clipboard.writeText(caja.value); aviso.textContent = 'Copiado.'; } catch { aviso.textContent = 'No se pudo copiar.'; } };
   const descargar = () => {
     const url = URL.createObjectURL(new Blob([caja.value || exportarJSON(app.progreso)], { type: 'application/json' }));
-    h('a', { href: url, download: `diez-minutos-${fechaLocal()}.json` }).click();
+    h('a', { href: url, download: `educa-a-tu-hijo-${fechaLocal()}.json` }).click();
     setTimeout(() => URL.revokeObjectURL(url), 5000);
   };
   const importar = async (texto: string) => {
-    try { await persistir(importarJSON(texto)); aviso.textContent = 'Progreso importado.'; }
+    if (!window.confirm('Esto reemplaza todo el progreso actual. ¿Continuar?')) return;
+    try { await persistir(importarJSON(texto)); rerender(); }
     catch (e) { aviso.textContent = (e as Error).message; }
   };
   const archivo = h('input', { type: 'file', accept: 'application/json,.json', class: 'campo',

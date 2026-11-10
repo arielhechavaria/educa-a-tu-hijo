@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { estadoTemporizador, formatoMMSS } from './timer';
+import { estadoTemporizador, formatoMMSS, inicioVigente } from './timer';
 
 describe('temporizador', () => {
   it('counts down from the full duration', () => {
@@ -17,5 +17,19 @@ describe('temporizador', () => {
     expect(formatoMMSS(600)).toBe('10:00');
     expect(formatoMMSS(65)).toBe('01:05');
     expect(formatoMMSS(0)).toBe('00:00');
+  });
+});
+
+describe('inicioVigente', () => {
+  const ahora = new Date(2026, 10, 10, 15, 0).getTime();
+  it('accepts a start from earlier today', () => {
+    expect(inicioVigente(new Date(2026, 10, 10, 8, 0).getTime(), ahora)).toBe(true);
+  });
+  it('rejects a start from a previous day', () => {
+    expect(inicioVigente(new Date(2026, 10, 9, 23, 59).getTime(), ahora)).toBe(false);
+  });
+  it('rejects invalid or future values', () => {
+    expect(inicioVigente(NaN, ahora)).toBe(false);
+    expect(inicioVigente(ahora + 60_000, ahora)).toBe(false);
   });
 });

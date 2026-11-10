@@ -1,4 +1,4 @@
-import { estadoTemporizador, formatoMMSS } from '../core/timer';
+import { estadoTemporizador, formatoMMSS, inicioVigente } from '../core/timer';
 import { app } from './state';
 import { h } from './dom';
 
@@ -9,7 +9,11 @@ let tick: number | undefined;
 
 try {
   const v = localStorage.getItem(KEY);
-  if (v) inicio = Number(v);
+  if (v) {
+    const n = Number(v);
+    if (inicioVigente(n, Date.now())) inicio = n;
+    else localStorage.removeItem(KEY);
+  }
 } catch { /* storage unavailable: timer lives in memory only */ }
 
 export const corriendo = () => inicio !== null;
@@ -21,10 +25,15 @@ export function empezar(): void {
   actualizar();
 }
 
+let alDetener: () => void = () => {};
+/** Registered by main to re-render the current view (avoids a circular import with views). */
+export const setAlDetener = (f: () => void) => { alDetener = f; };
+
 export function detener(): void {
   inicio = null;
   try { localStorage.removeItem(KEY); } catch { /* ignore */ }
   actualizar();
+  alDetener();
 }
 
 /** Always-visible bar; shows the countdown, warns at the end and keeps counting (never cuts). */

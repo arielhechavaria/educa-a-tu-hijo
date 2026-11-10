@@ -1,7 +1,7 @@
 import './style.css';
 import { h } from './ui/dom';
 import { iniciar } from './ui/state';
-import { actualizar, barra } from './ui/temporizador';
+import { actualizar, barra, setAlDetener } from './ui/temporizador';
 import { rutas, setRerender } from './ui/views';
 
 const contenido = h('main', { class: 'contenido' });
@@ -21,6 +21,7 @@ async function arrancar(): Promise<void> {
   document.getElementById('app')!.append(barra, contenido, nav);
   await iniciar();
   setRerender(() => void pintar());
+  setAlDetener(() => void pintar());
   window.addEventListener('hashchange', () => void pintar());
   actualizar();
   await pintar();

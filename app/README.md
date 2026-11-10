@@ -1,4 +1,4 @@
-# 10 minutos (app)
+# Educa a tu Hijo (app)
 
 Offline Android app (Vite + TypeScript + Capacitor) that proposes ~10 minutes of activities per day.
 Content comes from `../content/` (not edited here); PDFs from `../sources/pdf/` (Git LFS).

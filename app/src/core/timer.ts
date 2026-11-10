@@ -16,3 +16,11 @@ export function formatoMMSS(seg: number): string {
   const s = Math.max(0, Math.floor(seg));
   return `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 }
+
+/** A stored timer start is valid only if it is a past-or-now instant on the same local date as `ahoraMs`. */
+export function inicioVigente(inicioMs: number, ahoraMs: number): boolean {
+  if (!Number.isFinite(inicioMs) || inicioMs > ahoraMs) return false;
+  const a = new Date(inicioMs);
+  const b = new Date(ahoraMs);
+  return a.getFullYear() === b.getFullYear() && a.getMonth() === b.getMonth() && a.getDate() === b.getDate();
+}

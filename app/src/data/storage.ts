@@ -36,13 +36,25 @@ const preferencesStore: KeyValueStore = {
   },
 };
 
-/** Loads progress; missing or corrupt data yields an empty progress. */
+const KEY_RESPALDO = 'progreso-respaldo';
+
+/**
+ * Loads progress; missing data (first run) yields an empty progress. Corrupt data also yields
+ * an empty progress, but its raw text is first copied to `progreso-respaldo`. An existing
+ * backup is never overwritten: the first (oldest) corrupt copy is kept.
+ */
 export async function cargar(store: KeyValueStore = preferencesStore): Promise<Progreso> {
+  let text: string | null = null;
   try {
-    const text = await store.get(KEY);
+    text = await store.get(KEY);
     if (text === null) return crearProgresoVacio();
     return importarJSON(text);
   } catch {
+    if (text !== null) {
+      try {
+        if ((await store.get(KEY_RESPALDO)) === null) await store.set(KEY_RESPALDO, text);
+      } catch { /* backup is best effort */ }
+    }
     return crearProgresoVacio();
   }
 }

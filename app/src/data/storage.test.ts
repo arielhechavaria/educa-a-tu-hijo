@@ -30,4 +30,22 @@ describe('storage', () => {
     await s.set('progreso', JSON.stringify({ version: 1, ajustes: 3 }));
     expect(await cargar(s)).toEqual(crearProgresoVacio());
   });
+
+  it('backs up raw corrupt data to progreso-respaldo before returning empty', async () => {
+    const s = fakeStore({ progreso: '{{{ corrupto' });
+    expect(await cargar(s)).toEqual(crearProgresoVacio());
+    expect(s.data['progreso-respaldo']).toBe('{{{ corrupto');
+  });
+
+  it('keeps the first backup when corrupt data is loaded again', async () => {
+    const s = fakeStore({ progreso: 'primero', 'progreso-respaldo': 'original' });
+    await cargar(s);
+    expect(s.data['progreso-respaldo']).toBe('original');
+  });
+
+  it('does not create a backup on first run', async () => {
+    const s = fakeStore();
+    await cargar(s);
+    expect('progreso-respaldo' in s.data).toBe(false);
+  });
 });

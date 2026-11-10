@@ -1,4 +1,4 @@
-package cu.diezminutos.app;
+package cu.educaatuhijo.app;
 
 import com.getcapacitor.BridgeActivity;
 
