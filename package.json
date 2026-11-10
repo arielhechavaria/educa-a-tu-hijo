@@ -1,0 +1,9 @@
+{
+  "name": "diez-minutos",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"scripts/**/*.test.mjs\"",
+    "validate": "node scripts/validate/cli.mjs"
+  }
+}
