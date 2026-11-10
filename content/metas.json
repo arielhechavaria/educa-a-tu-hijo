@@ -1,0 +1,186 @@
+[
+  {
+    "id": "egreso-motricidad-01",
+    "cuaderno": "diagnostico-egreso-5-6",
+    "pagina_pdf": 4,
+    "dimension": "motricidad",
+    "descripcion": "Copiar a lápiz, en el renglón vacío, rasgos que siguen un modelo (zigzag, arcos, lazos y óvalos), manteniéndose entre las dos líneas guía.",
+    "texto_fuente": "TRAZADO"
+  },
+  {
+    "id": "egreso-relacion-entorno-01",
+    "cuaderno": "diagnostico-egreso-5-6",
+    "pagina_pdf": 5,
+    "dimension": "relacion_entorno",
+    "descripcion": "Reconocer el triángulo, el cuadrado, el círculo, el rectángulo y el óvalo dentro de figuras compuestas (camión, payaso, casa, tren, perro, pájaro) y relacionar cada forma con el color del modelo.",
+    "texto_fuente": "FORMA Y COLOR"
+  },
+  {
+    "id": "egreso-relacion-entorno-02",
+    "cuaderno": "diagnostico-egreso-5-6",
+    "pagina_pdf": 6,
+    "dimension": "relacion_entorno",
+    "descripcion": "Reproducir en una cuadrícula de puntos vacía el mismo dibujo de líneas que aparece en el modelo, respetando la posición y la dirección de cada línea.",
+    "texto_fuente": "ORGANIZACIÓN PERCEPTUAL"
+  },
+  {
+    "id": "egreso-relacion-entorno-03",
+    "cuaderno": "diagnostico-egreso-5-6",
+    "pagina_pdf": 7,
+    "dimension": "relacion_entorno",
+    "descripcion": "Relacionar cada número del 1 al 10 con su cantidad, representando en la casilla de abajo tantos elementos como indica el número.",
+    "texto_fuente": "RELACIONES CUANTITATIVAS"
+  },
+  {
+    "id": "egreso-motricidad-02",
+    "cuaderno": "diagnostico-egreso-5-6",
+    "pagina_pdf": 8,
+    "dimension": "motricidad",
+    "descripcion": "Recortar con tijera un círculo siguiendo su contorno curvo.",
+    "texto_fuente": "PRODUCCIÓN: RECORTE, RASGADO, DIBUJO Y COLOREADO — El círculo se entrega separado de la hoja del cuaderno para que el niño lo recorte."
+  },
+  {
+    "id": "egreso-motricidad-03",
+    "cuaderno": "diagnostico-egreso-5-6",
+    "pagina_pdf": 8,
+    "dimension": "motricidad",
+    "descripcion": "Rasgar con los dedos una tira de papel siguiendo la línea del doblez.",
+    "texto_fuente": "PRODUCCIÓN: RECORTE, RASGADO, DIBUJO Y COLOREADO — El rectángulo se recorta por el adulto y se le entrega al niño para que lo rasgue por el doblez."
+  },
+  {
+    "id": "egreso-estetica-01",
+    "cuaderno": "diagnostico-egreso-5-6",
+    "pagina_pdf": 8,
+    "dimension": "estetica",
+    "descripcion": "Dibujar y colorear con intención, usando el color dentro de los límites del dibujo.",
+    "texto_fuente": "PRODUCCIÓN: RECORTE, RASGADO, DIBUJO Y COLOREADO"
+  },
+  {
+    "id": "egreso-relacion-entorno-04",
+    "cuaderno": "diagnostico-egreso-5-6",
+    "pagina_pdf": 10,
+    "dimension": "relacion_entorno",
+    "descripcion": "Comparar dos caminos de distinta forma que van del mismo punto de partida al mismo lugar y decir cuál es más largo y cuál más corto.",
+    "texto_fuente": "[hoja de trabajo sin texto: un payaso y una carpa de circo unidos por dos caminos de colores (amarillo y rosado) con distinto recorrido]"
+  },
+  {
+    "id": "egreso-relacion-entorno-05",
+    "cuaderno": "diagnostico-egreso-5-6",
+    "pagina_pdf": 10,
+    "dimension": "relacion_entorno",
+    "descripcion": "Comparar dos grupos de objetos con la misma cantidad colocados de forma distinta (9 puntos rojos en una fila y 9 verdes en dos filas) y decir si tienen igual cantidad o cuál tiene más.",
+    "texto_fuente": "[hoja de trabajo sin texto: 9 puntos rojos en una fila y 9 puntos verdes en dos filas (5 y 4), con una raya para responder debajo]"
+  },
+  {
+    "id": "preescolar-motricidad-01",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 5,
+    "dimension": "motricidad",
+    "descripcion": "Unir con una línea cada figura con su pareja (payaso y tren, gato y plato, auto y casa, conejo y zanahoria) sin salirse de caminos rectos y curvos cada vez más estrechos, y finalmente sin camino marcado.",
+    "texto_fuente": "Coordinación visomotora"
+  },
+  {
+    "id": "preescolar-motricidad-02",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 6,
+    "dimension": "motricidad",
+    "descripcion": "Copiar a lápiz, en el renglón vacío, rasgos que siguen un modelo (zigzag, lazos y arcos), manteniéndose entre las dos líneas guía.",
+    "texto_fuente": "Trazado de rasgos"
+  },
+  {
+    "id": "preescolar-motricidad-03",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 7,
+    "dimension": "motricidad",
+    "descripcion": "Recortar con tijera siguiendo una línea discontinua recta.",
+    "texto_fuente": "Recorte, rasgado, coloreado y trazado"
+  },
+  {
+    "id": "preescolar-motricidad-04",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 7,
+    "dimension": "motricidad",
+    "descripcion": "Rasgar papel con los dedos siguiendo un contorno.",
+    "texto_fuente": "Recorte, rasgado, coloreado y trazado"
+  },
+  {
+    "id": "preescolar-motricidad-05",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 7,
+    "dimension": "motricidad",
+    "descripcion": "Colorear un dibujo (caballo y carreta) rellenando las partes sin salirse de los contornos.",
+    "texto_fuente": "Recorte, rasgado, coloreado y trazado"
+  },
+  {
+    "id": "preescolar-motricidad-06",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 7,
+    "dimension": "motricidad",
+    "descripcion": "Copiar en las casillas vacías las figuras del modelo (círculo, aspa y T) y trazar sobre las rayas indicadas.",
+    "texto_fuente": "Recorte, rasgado, coloreado y trazado"
+  },
+  {
+    "id": "preescolar-relacion-entorno-01",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 8,
+    "dimension": "relacion_entorno",
+    "descripcion": "Reconocer el triángulo, el cuadrado, el círculo, el rectángulo y el óvalo en objetos y escenas dibujadas (velero, cerdito, pecera, jaula, persona, glorieta).",
+    "texto_fuente": "Percepción visual de la forma"
+  },
+  {
+    "id": "preescolar-relacion-entorno-02",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 9,
+    "dimension": "relacion_entorno",
+    "descripcion": "Encontrar, entre varias figuras parecidas y giradas, la que es igual al modelo, fijándose en sus partes y en su posición.",
+    "texto_fuente": "Semejanzas"
+  },
+  {
+    "id": "preescolar-comunicacion-01",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 9,
+    "dimension": "comunicacion",
+    "descripcion": "Encontrar, entre grupos de letras parecidos, el que es igual al modelo, fijándose en la forma y el orden de las letras.",
+    "texto_fuente": "Semejanzas — RUN RON NUR RUN UNR / GA GU GA AG GA"
+  },
+  {
+    "id": "preescolar-relacion-entorno-03",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 10,
+    "dimension": "relacion_entorno",
+    "descripcion": "Encontrar, entre varias figuras iguales al modelo, la única que es diferente por la posición de una de sus partes.",
+    "texto_fuente": "Diferencias"
+  },
+  {
+    "id": "preescolar-comunicacion-02",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 10,
+    "dimension": "comunicacion",
+    "descripcion": "Encontrar, entre grupos de letras iguales al modelo, el único que es diferente porque cambia el orden de las letras.",
+    "texto_fuente": "Diferencias — XS XS XS SX XS / NES SEN NES NES NES"
+  },
+  {
+    "id": "preescolar-relacion-entorno-04",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 11,
+    "dimension": "relacion_entorno",
+    "descripcion": "Reproducir en una cuadrícula de puntos vacía el mismo dibujo de líneas que aparece en el modelo, respetando la posición y la dirección de cada línea.",
+    "texto_fuente": "Organización perceptiva"
+  },
+  {
+    "id": "preescolar-relacion-entorno-05",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 12,
+    "dimension": "relacion_entorno",
+    "descripcion": "Distinguir cada figura dentro de un dibujo de figuras superpuestas (estrella, triángulo, círculo, cuadrado; varias estrellas) y encontrar una figura escondida sobre un fondo de líneas enredadas.",
+    "texto_fuente": "Relación fondo-figura"
+  },
+  {
+    "id": "preescolar-relacion-entorno-06",
+    "cuaderno": "tareas-diagnosticas-preescolar",
+    "pagina_pdf": 13,
+    "dimension": "relacion_entorno",
+    "descripcion": "Comparar grupos pequeños de elementos (hasta 5) colocados de distinta forma y encontrar el que tiene la misma cantidad que el modelo.",
+    "texto_fuente": "Relaciones cuantitativas"
+  }
+]
