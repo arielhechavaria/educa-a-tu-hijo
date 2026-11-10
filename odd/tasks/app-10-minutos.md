@@ -17,14 +17,14 @@ Estrategia de entrega: ask-on-risk. Runner de tests: vitest para `app/` (lógica
 
 ## Tasks
 - [x] T12 (S11) inline (scaffold trivial; cap sync android OK) — scaffold Vite+TS+Capacitor
-- [ ] T13 (S4,S10) sonnet — pipeline de assets PDF
+- [x] T13 (S4,S10) sonnet (16 MB total assets, gs /ebook) — pipeline de assets PDF
 - [x] T14 (S3,S8) opus (89 tests total; decisiones: ver Log L3) — scheduler TDD
 - [x] T15 (S7,S10) sonnet (27 tests; commit data layer) — capa de datos
-- [ ] T16 (S3) sonnet — Hoy + temporizador
-- [ ] T17 (S4) sonnet — Ficha + visor pdf.js
-- [ ] T18 (S5,S6) sonnet — registro + Semana
-- [ ] T19 (S7) haiku — Ajustes
-- [ ] T20 (S11) sonnet — pase de calidad
+- [x] T16 (S3) sonnet — Hoy + temporizador
+- [x] T17 (S4) sonnet — Ficha + visor pdf.js
+- [x] T18 (S5,S6) sonnet — registro + Semana
+- [x] T19 (S7) haiku — Ajustes
+- [x] T20 (S11) sonnet — pase de calidad
 - [ ] T21 (S10) haiku — APK + README (bloqueo probable: sin JDK/Android SDK en el entorno)
 - [ ] T22 (S10,S11) opus, independiente — revisión final
 
@@ -32,3 +32,6 @@ Estrategia de entrega: ask-on-risk. Runner de tests: vitest para `app/` (lógica
 - L1 (2026-11-10): request verbatim = el mensaje de autorización "app-10-minutos" (ver Specs, citas literales).
 - L2: Observado: content/ tiene 99 fichas (quinto: relacion_entorno 41, comunicacion 17, motricidad 10, social_personal 6; sexto: 25); NO hay fichas `estetica` → el scheduler debe tolerar dimensiones vacías. Entorno sin java ni Android SDK; disco libre 3.7 GB.
 - L3: T14 decisiones no especificadas (confirmar con el usuario): solo×1 repasa a ~10 días; saltar vuelve al día 1–3 y va último; orden por cuaderno (no solo por subárea, casi todas las subáreas tienen 1 ficha); al menos 1 ficha nueva por día mientras queden (sin esto solo 39/74 fichas aparecían en 60 días). Plan mínimo de 3 fichas puede pasar de 10 min (3×5=15).
+- L4: Evidencia (headless Chromium, 360-390px, scratchpad e2e): Hoy genera 3 fichas/11 min; temporizador 10:00 -> "+00:02" tras 10:01 sin cortar; registro 4 botones; Semana en texto sin porcentajes; exportar -> borrar -> importar -> exportar idéntico (JSON igual); cambio a sexto rehace el plan; 0 peticiones externas (offline).
+- L5: "Ver lámina" abre la página correcta (canvas data-pagina == pagina_pdf): aprendo-con-mi-entorno p10, lectura-imagenes-4-5 p8, patrones-sensoriales p7, pre-escritura p5 (captura visual verificada), aprendo-con-mi-entorno p10 (ficha -b). NOTA: el contenido solo tiene fichas de 4 cuadernos, así que no hay 5 cuadernos distintos; se cubren 4 cuadernos + 1 ficha extra.
+- L6 T20 checklist: letra base 20px, botones >=2.9rem, registro fijo abajo (una mano), modo oscuro por prefers-color-scheme (capturas), bundle JS 26 KB + pdf.js 444 KB lazy; sin pruebas en dispositivo gama baja real (no hay dispositivo). Descarga de archivo (blob) y navigator.share sin verificar en WebView Android: hay copiar/pegar como alternativa.

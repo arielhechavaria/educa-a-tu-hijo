@@ -1,0 +1,18 @@
+export interface EstadoTemporizador {
+  restanteSeg: number;
+  /** Seconds past the target; the timer keeps counting and never cuts the session. */
+  excedidoSeg: number;
+  terminado: boolean;
+}
+
+export function estadoTemporizador(inicioMs: number, ahoraMs: number, duracionMin: number): EstadoTemporizador {
+  const total = duracionMin * 60;
+  const transcurrido = Math.max(0, Math.floor((ahoraMs - inicioMs) / 1000));
+  const restanteSeg = Math.max(0, total - transcurrido);
+  return { restanteSeg, excedidoSeg: Math.max(0, transcurrido - total), terminado: transcurrido >= total };
+}
+
+export function formatoMMSS(seg: number): string {
+  const s = Math.max(0, Math.floor(seg));
+  return `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
+}
