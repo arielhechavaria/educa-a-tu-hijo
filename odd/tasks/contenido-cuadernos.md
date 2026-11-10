@@ -39,13 +39,13 @@ Meta (`content/metas.json`): `{ "id": "egreso-relacion-entorno-01", "cuaderno": 
 ## Tasks
 - [x] T01 (S1) inline — repo + LFS; commit c368b5d
 - [x] T02 (S2, S7) inline — 12 PDFs, bytes y sha256 verificados; commit en feat/contenido-cuadernos (1 reintento tras timeout transitorio)
-- [ ] T03 (S3, S7) sonnet por PDF
+- [x] T03 (S3, S7) sonnet por PDF — 12 inventarios + content/INVENTARIO.md
 - [x] T04 (S5, S6) sonnet, TDD — RED (módulo ausente) → GREEN 49/49; ver commit feat(validate)
-- [ ] T05 haiku — OCR
-- [ ] T06 sonnet — QC OCR
-- [ ] T07 sonnet — orientaciones
-- [ ] T08.a–l (S4, S5, S6) sonnet por cuaderno
-- [ ] T09 opus — metas
+- [x] T05 — no aplica: ningún PDF necesita OCR para instrucciones (L3)
+- [x] T06 — no aplica (L3); láminas se leen visualmente
+- [ ] T07 sonnet — orientaciones: hechas para los 4 del quinto año; faltan sexto año (nociones-matematica no tiene; lectura-imagenes-5-6 pdf 4; analisis-fonico-5-6 pdf 4)
+- [ ] T08.a–l (S4, S5, S6) sonnet por cuaderno — HECHOS (quinto): patrones-sensoriales 25, pre-escritura 10, lectura-imagenes-4-5 15, aprendo-con-mi-entorno 49 (24 quinto + 25 sexto). PENDIENTES (sexto): nociones-matematica, relaciones-espaciales, lectura-imagenes-5-6, analisis-fonico-5-6. Sin fichas por decisión: lectura-imagenes-general (3–4 años), juegos-de-tarjetas (láminas)
+- [x] T09 opus — 23 metas (9 egreso, 14 preescolar), 9 inciertas listadas en reporte
 - [ ] T10 opus — revisión cruzada (distinto al extractor)
 - [ ] T11 haiku — REVISAR.md por script
 - [ ] GATE — revisión humana
@@ -54,3 +54,4 @@ Meta (`content/metas.json`): `{ "id": "egreso-relacion-entorno-01", "cuaderno": 
 - L1: ver mensaje original de autorización (feature **contenido-cuadernos**, T01–T11 de PLAN.md).
 - L2 (2026-11-10): faltaban git-lfs y poppler/ghostscript; el usuario los instaló. Dominio biblioteca.cubaeduca.cu responde (HTTP 206).
 - L3 (2026-11-10): inventario completo. lectura-imagenes-general es 3–4 años (cuarto) → sin fichas. juegos-de-tarjetas: 131 láminas sin actividades → sin fichas (marcar en REVISAR). Usuario: pre-escritura = "quinto" (confianza baja). Ningún PDF necesita OCR para las instrucciones; T05/T06 se reducen a lectura visual de láminas por los extractores (excepción registrada).
+- L4: pre-escritura agrupado en 10 fichas (1 por trazo distinto, 5 páginas cada uno), todas confianza baja; el usuario puede pedir 50. Siguiente: lanzar T07+T08 de los 4 cuadernos sexto (sonnet, paralelo), luego T10 (opus, subagente distinto), T11 (script), GATE.
